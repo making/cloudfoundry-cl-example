@@ -1,0 +1,13 @@
+---
+applications:
+- name: hello-cl
+  random-route: true
+  buildpack: https://github.com/jsmpereira/heroku-buildpack-cl.git
+  env:
+    CL_IMPL: sbcl
+    # or
+    # CL_IMPL: ccl
+    CL_WEBSERVER: hunchentoot
+    # or
+    # CL_WEBSERVER: aserve
+    

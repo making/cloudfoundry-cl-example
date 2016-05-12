@@ -1,9 +1,8 @@
 (asdf:defsystem #:example
   :serial t
-  :description "Example cl-heroku application"
+  :description "Example cl-cloudfoundry application"
   :depends-on (#:hunchentoot
-	       #:cl-who
-	       #:postmodern)
+	       #:cl-who)
   :components ((:file "package")
 	       (:module :src
 			:serial t      
